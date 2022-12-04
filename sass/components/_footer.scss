@@ -2,10 +2,6 @@
 	background: $herobc;
 	padding-top: 60px;
 	padding-bottom: 60px;
-
-	&__adress{
-		margin-top: 20px;
-	}
 	
 	&__box{
 		display: flex;
@@ -102,6 +98,8 @@
 		outline: none;
 		background-color: $herobc;
 		padding-left: 16px;
+		transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		
 	
 	}
 	

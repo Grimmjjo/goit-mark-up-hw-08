@@ -97,6 +97,7 @@
 		resize: none;
 		outline: none;
 		margin-top: 4px;
+		transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
 	
 	&__textarea:hover{
