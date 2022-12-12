@@ -3,10 +3,16 @@
 	padding-top: 60px;
 	padding-bottom: 60px;
 	
-	&__box{
-		display: flex;
-		align-items: baseline;
+	
+	@media screen and( min-width:1198.99px) {
+		&__box{
+			display: flex;
+			justify-content: center;
+			align-items: baseline;
+			
+		}
 	}
+	
 	
 	&__logo {
 		font-family: $font-family-raleway;
@@ -64,57 +70,8 @@
 		color:$adress;
 	}
 
-
-	&__sign{
-	margin-left: auto;
-	}
 	
-	&__text-sign{
-		font-weight: 700;
-		font-size: 14px;
-		line-height: calc(16 / 14);
-		letter-spacing: 0.03em;
-		text-transform: uppercase;
-		color: $backgroundcolor;
-		margin-bottom: 20px;
-		font-style: initial;
-	}
 	
-	&__sign-div{
-		display: flex;
-	}
-	
-	&__input{
-		font-weight: 400;
-		font-size: 16px;
-		line-height: calc(20 / 16);
-		letter-spacing: 0.03em;
-		border: 1px solid $border-footer-input;
-		color: rgba(255, 255, 255, 0.6);
-		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-		border-radius: 4px;
-		width: 358px;
-		height: 50px;
-		outline: none;
-		background-color: $herobc;
-		padding-left: 16px;
-		transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-		
-	
-	}
-	
-	&__input:hover{
-		border:1px solid $currentColor;
-	}
-	
-	&__input:focus {
-		border-color:  $currentColor;
-	}
-	
-	&__sign-icon{
-		margin-left: 10px;
-		cursor: pointer;
-	}
 
 	&__text{
 		font-weight: 700;
@@ -126,13 +83,128 @@
 	margin-bottom: 20px;
 	font-style: initial;
 	}
-	
+
 	&__social{
-	margin-left: 70px;
+	&{
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	@media screen and (min-width:1200px) {
+		&{
+			margin-left:70px ;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+
 }
 }
 
 
+@media screen and(max-width:1199.98px) {
+	.footer__adress
+	{text-align: center;
+	}
+}
+
+@media screen and(min-width:767.98px){
+	.footer__adress{
+		display: flex;
+	}
+}
+@media screen and (min-width:768px) {
+	.footer__grup-adress{
+		display: flex;
+		justify-content: space-around;
+		align-items: baseline;
+		margin-bottom: 60px;
+	}
+}
+
+
+@media screen and (min-width:1200px) {
+	.footer__grup-adress{
+		margin-bottom: 0;
+	}
+	
+}
+
+@media screen and (max-width: 1199.98px) {
+	.footer-form {
+	  margin-top: 60px;
+	}
+  }
+  @media screen and (min-width: 1200px) {
+	.footer-form {
+	  margin-left: auto;
+	}
+  }
+  @media screen and (min-width: 1200px) {
+	.footer-form__label {
+	  margin-right: 12px;
+	}
+  }
+  .footer-form__title {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: calc(13 / 14);
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	color: $backgroundcolor;
+  }
+  @media screen and (min-width: 1200px) {
+	.footer-form__wrap {
+	  display: flex;
+			  justify-content: center;
+			  align-items: center;
+	}
+  }
+  .footer-form__signup {
+	padding-left: 16px;
+	height: 50px;
+	color: $backgroundcolor;
+	background-color: $herobc;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	width: 100%;
+  }
+ 
+  @media screen and (min-width: 480px) {
+	.footer-form__signup {
+	  width: 450px;
+	}
+  }
+  @media screen and (min-width: 1200px) {
+	.footer-form__signup {
+	  width: 358px;
+	}
+  }
+  @media screen and (max-width: 1199.98px) {
+	.footer-form__signup {
+	  margin-bottom: 20px;
+	}
+  }
+  .footer-form__button {
+
+	display: flex;
+			justify-content: center;
+			align-items: center;
+  }
+  @media screen and (max-width: 1199.98px) {
+	.footer-form__button {
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+  }
+  .footer-form__icon {
+	margin-left: 10px;
+  }
+  
 
 
 

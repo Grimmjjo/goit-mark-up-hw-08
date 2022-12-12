@@ -6,12 +6,30 @@ ul
 	margin: 0px;
 	padding: 0px;
 }
-.container {
-	width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0 15px;
-  }
+
+	.container {
+		max-width: 1600px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	  }
+	 
+	  @media screen and (min-width: 480px) {
+		.container {
+		  width: 480px;
+		}
+	  }
+	  @media screen and (min-width: 768px) {
+		.container {
+		  width: 768px;
+		}
+	  }
+	  @media screen and (min-width: 1200px) {
+		.container {
+		  width: 1200px;
+		}}
+
 .list {
 	padding: 0;
 	margin: 0;
@@ -46,6 +64,8 @@ body {
   html {
 	box-sizing: border-box;
   }
+
+
 
 
 

@@ -18,8 +18,22 @@
 	&__link-portfolio{
 		display: flex;
 		justify-content: center;
-		margin-bottom: 50px;
+		margin-bottom: 30px;
+
+		@media screen and (max-width: 767.98px){
+      & {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 8px;
+}
+	}
+
+	@media  screen and (min-width:1199.98px) {
+		&{
+			margin-bottom: 50px;
+		}
 	}
 	
-}
+}}
 
