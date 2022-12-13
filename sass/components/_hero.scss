@@ -11,9 +11,12 @@ img{
 	text-align: center;
 
 
+
 	@media screen and(min-width:1200px) {
 		padding-top: 200px;
 		padding-bottom: 200px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
 	
@@ -33,10 +36,14 @@ img{
 		@media screen and (min-width:1200px) {
 			font-size: 44px;
 			line-height: calc(60 / 44);
-			margin-left: 215px;
-			margin-right: 215px;
+	
 		}
 
+
+		@media screen and (min-width:768px) {
+			padding-left: 180px;
+			padding-right: 180px;
+		}
 		font-weight: 900;
 		letter-spacing: 0.06em;
 		color: $backgroundcolor;

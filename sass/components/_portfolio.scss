@@ -1,8 +1,12 @@
 .main{
-	padding-top: 94px;
-	padding-bottom: 94px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	border: none;
 
+	@media screen and (min-width:1200px) {
+		&{padding-top: 94px;
+			padding-bottom: 94px;}
+	}
 	&__list-portfolio{
 		margin-right: 8px;
 	}
@@ -24,6 +28,7 @@
       & {
     display: flex;
     flex-wrap: wrap;
+	justify-content: flex-start;
     row-gap: 15px;
     column-gap: 8px;
 }
