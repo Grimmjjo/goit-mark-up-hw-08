@@ -68,12 +68,13 @@ html {
           box-sizing: border-box;
 }
 
-img {
-  width: 100%;
-  display: block;
-  height: auto;
+@media screen and (min-width: 0px) and (max-width: 1198px) {
+  img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
 }
-
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
@@ -81,6 +82,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  margin: 0 auto;
   background: #2f303a;
   background-size: cover;
   width: 1600px;
@@ -128,7 +130,7 @@ img {
   max-width: 100%;
   display: block;
   height: auto;
-  margin: 0;
+  margin: 0 auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/imgheader-mobile.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/imgheader-mobile.jpg);
 }
@@ -823,6 +825,12 @@ img {
   color: #ffffff;
   margin-bottom: 20px;
   font-style: initial;
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__text {
+    margin-top: 0;
+  }
 }
 .footer__social {
   margin-bottom: 60px;
@@ -1426,11 +1434,17 @@ img {
 .modal__text-accept {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.7142857143;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: #757575;
   cursor: pointer;
   margin-left: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__text-accept {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 .modal__contract {
   font-weight: 400;
@@ -1539,6 +1553,11 @@ img {
   color: #212121;
   margin-bottom: 10px;
   margin-top: 0;
+}
+@media screen and (min-width: 768px) {
+  .benefits__item h3 {
+    text-align: initial;
+  }
 }
 .benefits__item p {
   color: #757575;

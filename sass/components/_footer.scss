@@ -82,6 +82,11 @@
 	color: $backgroundcolor;
 	margin-bottom: 20px;
 	font-style: initial;
+	margin-top: 60px;
+
+	@media screen and(min-width:768px) {
+		margin-top: 0;
+	}
 	}
 
 	&__social{
